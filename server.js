@@ -16,7 +16,7 @@ app.use(express.json());
 app.use('/',healthRoutes);
 app.use('/api',authRoutes);
 app.use('/api/todo',toDoRoutes);
-mongoose.connect(process.env.DB_URL).then((result)=>{
+mongoose.connect(process.env.MONGODB_URI).then((result)=>{
     console.log("DB Connected Successfully!");
 }).catch(err=>{
     console.log(err);
