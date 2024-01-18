@@ -14,10 +14,6 @@
   ],
   "rewrites": [
     {
-      "source":"/(.*)",
-      "destination":"/:splat"
-    },
-    {
       "source": "/api/(.*)",
       "destination": "/api/:splat"
     }
