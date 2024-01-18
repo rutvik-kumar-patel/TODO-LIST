@@ -6,5 +6,5 @@
       "use": "@vercel/node"
     }
   ],
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/:splat" }]
+  "rewrites": [{ "source": "/api/:splat", "destination": "/api/:splat" }]
 }
