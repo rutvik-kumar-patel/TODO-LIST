@@ -9,7 +9,17 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/server.js"
+      "dest": "./server.js"
+    }
+  ],
+  "rewrites": [
+    {
+      "source":"/(.*)",
+      "destination":"/:splat"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/:splat"
     }
   ]
 }
